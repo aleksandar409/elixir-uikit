@@ -13,9 +13,9 @@ export const StyledTag = styled.div<ThemedProps>`
   align-items: center;
   background-color: ${({ outline, theme, variant = "primary" }) =>
     outline ? "transparent" : getColor(variant, theme)};
-  border: 2px solid #f0a119;
+  border: 2px solid #C8A2C8;
   border-radius: 16px;
-  color: #f0a119;
+  color: #C8A2C8;
   display: inline-flex;
   font-size: 14px;
   font-weight: 400;
@@ -25,7 +25,7 @@ export const StyledTag = styled.div<ThemedProps>`
   white-space: nowrap;
 
   svg {
-    fill: #f0a119;
+    fill: #C8A2C8;
   }
 `;
 

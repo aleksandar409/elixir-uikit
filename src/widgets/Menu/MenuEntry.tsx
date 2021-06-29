@@ -18,7 +18,7 @@ const rainbowAnimation = keyframes`
 `;
 
 const LinkLabel = styled.div<{ isPushed: boolean }>`
-  color: #f0a118;
+  color: #C8A2C8;
   transition: color 0.4s;
   flex-grow: 1;
 `;
@@ -31,8 +31,8 @@ const MenuEntry = styled.div<Props>`
   padding: ${({ secondary }) => (secondary ? "0 32px" : "0 16px")};
   font-size: ${({ secondary }) => (secondary ? "14px" : "16px")};
   background-color: ${({ secondary, theme }) => (secondary ? theme.colors.background : "transparent")};
-  color: #f0a118;
-  box-shadow: ${({ isActive, theme }) => (isActive ? `inset 4px 0px 0px #f0a119` : "none")};
+  color: #C8A2C8;
+  box-shadow: ${({ isActive, theme }) => (isActive ? `inset 4px 0px 0px #C8A2C8` : "none")};
 
   a {
     display: flex;
@@ -42,7 +42,7 @@ const MenuEntry = styled.div<Props>`
   }
 
   svg {
-    fill: #f0a118;
+    fill: #C8A2C8;
     margin-right: 8px;
   }
 

@@ -21,7 +21,7 @@ const { MoonIcon, SunIcon, LanguageIcon } = Icons;
 const Container = styled.div`
   flex: none;
   padding: 8px 4px;
-  background-color: #230e06;
+  background-color: #ffffff;
   border-top: solid 2px rgba(133, 133, 133, 0.1);
 `;
 
@@ -85,7 +85,7 @@ const PanelFooter: React.FC<Props> = ({
         {cakePriceUsd ? (
           <PriceLink href={priceLinkTree} target="_blank">
             <PancakeRoundTreeIcon width="24px" mr="8px" />
-            <Text bold style={{color:'#f0a119'}}>{`$${cakePriceUsd.toFixed(3)}`}</Text>
+            <Text bold style={{color:'#C8A2C8'}}>{`$${cakePriceUsd.toFixed(3)}`}</Text>
           </PriceLink>
         ) : (
           <Skeleton width={80} height={24} />
@@ -100,7 +100,7 @@ const PanelFooter: React.FC<Props> = ({
             return (
               <Dropdown key={social.label} position="top-right" target={<Icon {...iconProps} mr={mr} />}>
                 {social.items.map((item) => (
-                  <Link external key={item.label} href={item.href} aria-label={item.label} style={{color:'#f0a119'}}>
+                  <Link external key={item.label} href={item.href} aria-label={item.label} style={{color:'#C8A2C8'}}>
                     {item.label}
                   </Link>
                 ))}
@@ -118,7 +118,7 @@ const PanelFooter: React.FC<Props> = ({
           position="top"
           target={
             <Button variant="text" pr="6px" pl="6px" startIcon={<LanguageIcon color="textSubtle" width="24px" />}>
-              <Text style={{color:'#f0a119'}}>{currentLang?.toUpperCase()}</Text>
+              <Text style={{color:'#C8A2C8'}}>{currentLang?.toUpperCase()}</Text>
             </Button>
           }
         >
@@ -128,7 +128,7 @@ const PanelFooter: React.FC<Props> = ({
               fullWidth
               onClick={() => setLang(lang)}
               // Safari fix
-              style={{ minHeight: "32px", height: "auto", color:'#f0a119' }}
+              style={{ minHeight: "32px", height: "auto", color:'#C8A2C8' }}
             >
               {lang.language}
             </MenuButton>
